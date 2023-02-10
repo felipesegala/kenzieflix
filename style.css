@@ -1,0 +1,88 @@
+body {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.container .logo {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 150px;
+}
+
+.container .titulo {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+.container .container-perfil {
+    display: flex;
+    margin: 20px;    
+}
+
+.container .container-perfil .imagens {
+    margin: 13px;
+}
+
+.container .container-perfil .imagens #plus-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+
+.container .container-perfil .imagens #plus-imagem {
+    
+    width: 50%;
+    height: 43%;
+}
+
+.container .container-perfil .imagens .perfis-foto {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    width: 160px;
+}
+
+.container .container-perfil .imagens .perfis-foto:hover {
+    border: 1px solid white;
+    transition: .6s;
+}
+
+figcaption {
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.container button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+    margin-top: 40px;
+    padding: 10px;
+    width: 150px;
+}
+
+.container button:hover {
+    background-color: white;
+    color: black;
+    transition:  .6s;
+}
+
+.container .container-perfil .imagens #plus-container:hover {
+    border: 1px solid white;
+    border-radius: 6px;
+    transition:  .6s;
+}
