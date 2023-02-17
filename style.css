@@ -14,47 +14,93 @@ section {
     align-items: center;
 }
 
-.container .logo {
+.logo {
     width: 190px;
     margin-bottom: 50px;
 }
 
-.container .titulo {
+.titulo {
     margin-bottom: 60px;
 }
 
-.container .container-perfis {
+.container-perfis {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     width: 700px;
 }
 
-.container .container-perfis .figure-imagens {
-        margin: 0 15px;
+.figure-imagens {
+    margin: 0 10px;    
 }
 
-.container .container-perfis .figure-imagens .fotinha {
+.fotinha {
+    border: 1px solid transparent;
     border-radius: 8px;
     width: 160px;
 }
 
-.container .container-perfis .figure-imagens .container-adicionar {
+.container-adicionar {
     align-items: center;
     background-color: rgba(128, 128, 128, 0.327);
-    border: 1px solid transparent;
     border-radius: 8px;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
-    opacity: .6;
+    opacity: .3;
 
     width: 160px;
     height: 160px;
 }
 
-.container .container-perfis .container-adicionar .imagem-plus {
+.figure-imagens figcaption {
+    text-align: center;
+    margin-top: 10px;
+    opacity: .6;
+}
+
+.button {
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+    margin-top: 70px;
+    padding: 13px;
+    background-color: black;
+
+    width: 160px;
+}
+
+.figure-imagens:hover {
+    opacity: 1;
     
 }
 
-.container .button {
-    margin-top: 70px;
+.figure-imagens:hover .fotinha {
+    border: 1px solid white;
+    transition: .6s;
 }
+
+.container-adicionar:hover {
+    border: 1px solid white;
+    opacity: 1;
+    transition: .8s;
+}
+
+.imagem-plus:hover {
+    opacity: 1;
+    transition: .4s;
+}
+
+.figure-imagens:hover figcaption {
+    color: white;
+    opacity: 1;
+    transition: .4s;
+}
+
+.button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    transition: .4s;
+}
+
